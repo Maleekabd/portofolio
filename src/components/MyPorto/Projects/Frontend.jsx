@@ -78,12 +78,14 @@ const Frontend = () => {
                                 </ul>
                             ))}
                         </div>
-                        <div className="border-l border-black w-1/5">
-                            <ul>
+                        <div className="border-l border-black w-2/6">
+                            <ul className="font-[Poppins]">
                                 <li>
-                                    <h1 className="ml-5 underline underline-offset-4 font-[Poppins]">Supporting Course</h1>
+                                    <h2 className="ml-5 underline underline-offset-4">Supporting Course</h2>
+                                    <ul className="list-disc pl-4">
+                                        <li className="ml-5 text-md font-thin">FreeCodeCamp. Frontend with React</li>
+                                    </ul>
                                 </li>
-                                <li></li>
                             </ul>
                         </div>
                     </div>

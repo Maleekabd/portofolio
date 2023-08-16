@@ -20,10 +20,14 @@ class Navbar extends React.Component {
                             <button className="tracking-wide text-black">malikabdurrasyid86@gmail.com</button>
                         </li>
                         <li className="p-1 flex items-center justify-between">
+                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/__malikabd/">
                             <AiOutlineInstagram className="w-7 h-8 text-black" />
+                            </a>
                         </li>
                         <li className="p-1 flex items-center justify-between">
-                            <BsLinkedin className="w-7 h-6 text-black" />
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/malik-abdurrasyid-1643b1282/">
+                                <BsLinkedin className="w-7 h-6 text-black" />
+                            </a>
                         </li>
                     </div>
                 </ul>
