@@ -20,8 +20,8 @@ class ReusableComponents extends React.Component {
                                 <img src={project.image} className="w-full h-4/5 object-cover rounded-[2em]" />
                             </div>
                             <h1 className="text-5xl font-bold text-start p-4 mt-5  text-black italic">{(project.title).toUpperCase()}</h1>
-                            <h2 className="text-[16px] italic text-start p-4 my-2 font-[Poppins]">{project.subtitle}</h2>
-                            <p className="p-5 pt-0 text-justify text-black text-sm font-[Poppins]">{project.paragraf}</p>
+                            <h2 className="text-[20px] text-start underline underline-offset-4 pl-5 my-2 font-thin font-[Poppins]">{project.subtitle}</h2>
+                            <p className="p-5 pt-0 text-start text-black text-xl font-thin">{project.paragraf}</p>
                         </li>
                     </ul>
                 ))

@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import ReusableComponents from "../UI/ReusableComponents";
 import CRYPTOGRAPHY from "../../../assets/Cryptography.jpg"
-import { useNavigate } from "react-router-dom";
-import Network from "./Network";
 import Layout from "../../../layout/layout";
 
 const CryptographyProject = [
     {
         id: 1,
         title: "Project Client Server using python socket"
-    },
-    {
-        id: 2,
-        title: "RSA Certificate Generator"
     }
+    // {
+    //     id: 2,
+    //     title: "RSA Certificate Generator"
+    // }
 ]
 
 const projects = [
@@ -21,7 +19,7 @@ const projects = [
         id: 1,
         title: "Cryptography",
         subtitle: "Securing Data in the Digital Realm: Exploring the World of Cryptography",
-        paragraf: "Find more about my Cryptography projects. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium obcaecati totam consequuntur ex aliquam ab eum nihil necessitatibus rem, perspiciatis quasi dolores maxime corrupti reiciendis autem modi iure dolorem facilis eveniet optio",
+        paragraf: "Cryptography is the study of techniques for secure communication in the presence of third parties. It is used in a wide variety of applications, including secure electronic commerce, secure communication over the internet, and digital signatures.",
         image: CRYPTOGRAPHY
     }
 ]
@@ -37,7 +35,7 @@ const Cryptography = () => {
     return (
         <>
             <ReusableComponents projects={projects} />
-            <button onClick={handleClick} className="rounded-full ml-72 w-56 h-12 border border-black p-2 text-black">See More</button>
+            <button onClick={handleClick} className="button rounded-full ml-80 w-56 h-12 border border-black p-2 text-black">See More</button>
             {comp && (
                 <Layout>
                     <div className="flex justify-between">

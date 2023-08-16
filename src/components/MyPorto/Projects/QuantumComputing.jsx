@@ -19,7 +19,7 @@ const projects = [
         id: 4,
         title: "quantum computing",
         subtitle: "Bits and Qubits: Journeying into the Quantum Computing Frontier",
-        paragraf: "Find more about my Cryptography projects. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium obcaecati totam consequuntur ex aliquam ab eum nihil necessitatibus rem, perspiciatis quasi dolores maxime corrupti reiciendis autem modi iure dolorem facilis eveniet optio",
+        paragraf: "Quantum computing is a type of computing that uses quantum mechanics to perform calculations. Quantum computers are able to solve certain types of problems that are intractable for classical computers, such as factoring large numbers and simulating physical systems.",
         image: QUANTUM
     }
 ]
@@ -37,7 +37,7 @@ const QuantumComputing = () => {
         <>
             <ReusableComponents projects={projects} />
             <div className="pb-20">
-                <button onClick={handleClick} className="rounded-full ml-72 w-56 h-12 border border-black p-2 text-black">See More</button>
+                <button onClick={handleClick} className="button rounded-full ml-80 w-56 h-12 border border-black p-2 text-black">See More</button>
                 {comp && (
                     <Layout>
                         <div className="flex justify-between">

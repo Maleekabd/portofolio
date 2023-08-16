@@ -33,6 +33,9 @@ const FrontendProjects = [
     {
         id: 7,
         title: "Vegetable Box : Get Fresh Vegetable from local farmer"
+    }, {
+        id: 8,
+        title: "Web Portofolio"
     }
 ]
 
@@ -41,7 +44,7 @@ const projects = [
         id: 2,
         title: "FRONTEND WEB DEV",
         subtitle: "Navigating the UI Landscape: Exploring Frontend Development using React",
-        paragraf: "Find more about my Cryptography projects. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium obcaecati totam consequuntur ex aliquam ab eum nihil necessitatibus rem, perspiciatis quasi dolores maxime corrupti reiciendis autem modi iure dolorem facilis eveniet optio",
+        paragraf: "React is a popular JavaScript library for building user interfaces (UIs) for web applications. React is a popular choice for front-end developers because it is fast, easy to use, and can be used to build a variety of web applications.",
         image: FRONTEND
     }
 ]
@@ -59,7 +62,7 @@ const Frontend = () => {
     return (
         <>
             <ReusableComponents projects={projects} />
-            <button onClick={handleClick} className="rounded-full ml-72 w-56 h-12 border border-black p-2 text-black">See More</button>
+            <button onClick={handleClick} className="button rounded-full ml-80 w-56 h-12 border border-black p-2 text-black">See More</button>
             {comp && (
                 <Layout>
                     <div className="flex justify-between">

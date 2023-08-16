@@ -29,7 +29,7 @@ const projects = [
         id: 3,
         title: "Computer Network",
         subtitle: "Nodes and Connections: Exploring the Wonders of Computer Networking",
-        paragraf: "Find more about my Cryptography projects. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium obcaecati totam consequuntur ex aliquam ab eum nihil necessitatibus rem, perspiciatis quasi dolores maxime corrupti reiciendis autem modi iure dolorem facilis eveniet optio",
+        paragraf: "A computer network is a group of computers that are connected to each other to share resources, such as data, hardware, and software. Computer networks can be classified based on their size, topology, and technology.",
         image: NETWORK
     }
 ]
@@ -45,7 +45,7 @@ const Network = () => {
     return (
         <>
             <ReusableComponents projects={projects} />
-            <button onClick={handleClick} className="rounded-full ml-72 w-56 h-12 border border-black p-2 text-black">See More</button>
+            <button onClick={handleClick} className="button rounded-full ml-80 w-56 h-12 border border-black p-2 text-black">See More</button>
             {comp && (
                 <Layout>
                     <div className="flex justify-between">
