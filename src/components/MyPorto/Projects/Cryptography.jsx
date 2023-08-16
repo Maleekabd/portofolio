@@ -43,18 +43,22 @@ const Cryptography = () => {
                             {CryptographyProject.map(project => (
                                 <ul key={project.id} className="flex gap-16">
                                     <li>
-                                        <h1 className="font-thin text-2xl italic">{project.id}. </h1>
+                                        <h1 className="font-thin text-xl italic">{project.id}. </h1>
                                     </li>
                                     <li>
-                                        <h1 className="font-thin text-2xl italic font-[Poppins]">{project.title}</h1>
+                                        <h1 className="font-thin text-xl italic font-[Poppins]">{project.title}</h1>
                                     </li>
                                 </ul>
                             ))}
                         </div>
-                        <div className="border-l border-black w-1/5">
-                            <ul>
+                        <div className="border-l border-black w-2/6">
+                            <ul className="font-[Poppins]">
                                 <li>
-                                    <h1 className="ml-5 underline underline-offset-4 font-[Poppins]">Supporting Course</h1>
+                                    <h2 className="ml-5 underline underline-offset-4">Supporting Course</h2>
+                                    <ul className="list-disc pl-4">
+                                        <li className="ml-5 text-md font-thin">Security and Cryptography</li>
+                                        <li className="ml-5 text-md font-thin">Bitcoin and Cryptocurrecies Technology</li>
+                                    </ul>
                                 </li>
                                 <li></li>
                             </ul>
