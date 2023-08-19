@@ -16,7 +16,7 @@ const About = () => {
                     <div className='lg:w-3/6 lg:h-full flex items-center justify-center'>
                         <div className='flex flex-col h-auto m-5 p-3 gap-10'>
                             <h1 className='text-3xl font-semibold font-[Poppins] border-b border-black'>WHO AM I ?</h1>
-                            <p className='text-xl font-thin'>saya adalah seorang lulusan teknik elektro, dengan peminatan telekomunikasi. saya menyukai programming sejak duduk di kelas 8 SMP. Pada saat itu saya belajar bahasa C++</p>
+                            <p className='text-xl font-thin'>saya adalah seorang mahasiswa teknik elektro, dengan peminatan telekomunikasi. saya menyukai programming sejak duduk di kelas 8 SMP. Pada saat itu saya belajar bahasa C++</p>
                             <button className='font-[Poppins] text-center rounded shadow bg-emerald-400 w-3/5 lg:w-2/5 h-10'>Baca Selengkapnya</button>
                         </div>
                     </div>
