@@ -33,7 +33,7 @@ const Cryptography = () => {
     }
 
     return (
-        <>
+        <div>
             <ReusableComponents projects={projects} />
             <button onClick={handleClick} className="button rounded-full ml-28 lg:ml-80 w-56 h-12 border border-black p-2 text-black">See More</button>
             {comp && (
@@ -65,7 +65,7 @@ const Cryptography = () => {
                     </div>
                 </Layout>
             )}
-        </>
+        </div>
     )
 }
 
