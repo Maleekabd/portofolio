@@ -67,8 +67,7 @@ const Network = () => {
                                     <h2 className="ml-5 underline underline-offset-4">Supporting Course</h2>
                                     <ul className="list-disc pl-4">
                                         <li className="ml-5 text-md font-thin">Internet Engineering</li>
-                                        <li className="ml-5 text-md font-thin">CCNA</li>
-                                        <li className="ml-5 text-md font-thin">CompaTIA Network+</li>
+                                        <li className="ml-5 text-md font-thin">Prepare for the CompTIA Network+ (N10-007) Exam</li>
                                     </ul>
                                 </li>
                             </ul>

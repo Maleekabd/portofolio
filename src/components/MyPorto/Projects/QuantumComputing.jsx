@@ -59,6 +59,7 @@ const QuantumComputing = () => {
                                         <h2 className="ml-5 underline underline-offset-4">Supporting Course</h2>
                                         <ul className="list-disc pl-4">
                                             <li className="ml-5 text-md font-thin">Quantum Computing and Quantum Information</li>
+                                            <li className="ml-5 text-md font-thin">Introduction to Quantum Computing</li>
                                         </ul>
                                     </li>
                                 </ul>

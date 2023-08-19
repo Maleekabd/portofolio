@@ -5,17 +5,6 @@ import { useRef } from 'react'
 import { useState } from 'react'
 
 const About = () => {
-    const [isScrolling, setIsScrolling] = useState(false);
-
-    const scrollToSection = (sectionId) => {
-        setIsScrolling(true);
-
-        const targetElement = document.getElementById(sectionId);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-            setTimeout(() => setIsScrolling(false), 1000); // Setelah 1 detik, atur isScrolling kembali ke false
-        }
-    };
 
     return (
         <div className='relative'>
@@ -28,7 +17,7 @@ const About = () => {
                         <div className='flex flex-col h-auto m-5 p-3 gap-10'>
                             <h1 className='text-3xl font-semibold font-[Poppins] border-b border-black'>WHO AM I ?</h1>
                             <p className='text-xl font-thin'>saya adalah seorang lulusan teknik elektro, dengan peminatan telekomunikasi. saya menyukai programming sejak duduk di kelas 8 SMP. Pada saat itu saya belajar bahasa C++</p>
-                            <button onClick={() => scrollToSection('about')} disabled={isScrolling} className='font-[Poppins] text-center rounded shadow bg-emerald-400 w-3/5 lg:w-2/5 h-10'>Baca Selengkapnya</button>
+                            <button className='font-[Poppins] text-center rounded shadow bg-emerald-400 w-3/5 lg:w-2/5 h-10'>Baca Selengkapnya</button>
                         </div>
                     </div>
                 </div>
