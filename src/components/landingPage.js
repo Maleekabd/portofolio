@@ -6,7 +6,7 @@ import About from "./About/About";
 class LandingPage extends React.Component {
     render() {
         return (
-            <>
+            <div>
                 <About />
                 <section className="h-screen relative">
                     <div className="w-full flex lg:flex lg:items-start lg:justify-start">
@@ -20,7 +20,7 @@ class LandingPage extends React.Component {
                         <img src={Surveillance} className="w-full h-screen lg:w-full lg:h-auto" />
                     </div>
                 </section>
-            </>
+            </div>
         )
     }
 }

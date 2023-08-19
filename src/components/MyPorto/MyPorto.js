@@ -7,12 +7,12 @@ import Frontend from "./Projects/Frontend";
 const MyPorto = () => {
 
     return (
-        <>
+        <div>
             <Cryptography />
             <Frontend />
             <Network />
             <QuantumComputing />
-        </>
+        </div>
     )
 }
 
