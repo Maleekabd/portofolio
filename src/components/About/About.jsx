@@ -19,16 +19,16 @@ const About = () => {
 
     return (
         <div className='relative'>
-            <div className={`${Styles.background} absolute left-40 top-[35em] h-[35em] w-9/12 z-10`}>
-                <div className='flex items-center h-full justify-center'>
-                    <div className='flex items-center justify-center w-3/6'>
-                        <img src={Malik} alt="malik" srcset="" className='w-4/6 rounded shadow-sm' />
+            <div className={`${Styles.background} absolute left-12 lg:left-40 top-[35em] h-auto lg:h-[35em] w-4/5 lg:w-9/12 z-10`}>
+                <div className='flex w-full flex-col items-center lg:h-full lg:justify-center'>
+                    <div className='flex p-5 items-center justify-center lg:w-3/6'>
+                        <img src={Malik} alt="malik" srcset="" className='w-3/6 rounded shadow-sm' />
                     </div>
-                    <div className='w-3/6 h-full flex items-center justify-center'>
+                    <div className='lg:w-3/6 lg:h-full flex items-center justify-center'>
                         <div className='flex flex-col h-auto m-5 p-3 gap-10'>
-                            <h1 className='text-3xl font-semibold font-[Poppins] border-b border-black'>Hello, I'm Malik Abdurrasyid</h1>
+                            <h1 className='text-3xl font-semibold font-[Poppins] border-b border-black'>WHO AM I ?</h1>
                             <p className='text-xl font-thin'>Saya adalah seorang elektro engineer, dengan peminatan telekomunikasi. di telekomunikasi ada mata kuliah sekuriti dan kriptografi, dan saya menekuni MK tersebut </p>
-                            <button onClick={() => scrollToSection('about')} disabled={isScrolling} className='font-[Poppins] text-center rounded shadow bg-emerald-400 w-2/5 h-10'>Baca Selengkapnya</button>
+                            <button onClick={() => scrollToSection('about')} disabled={isScrolling} className='font-[Poppins] text-center rounded shadow bg-emerald-400 w-3/5 lg:w-2/5 h-10'>Baca Selengkapnya</button>
                         </div>
                     </div>
                 </div>
