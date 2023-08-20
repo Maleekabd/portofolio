@@ -8,23 +8,28 @@ import { useState } from "react";
 const FrontendProjects = [
     {
         id: 1,
-        title: "ShopBayy : E-Commerce"
+        title: "ShopBayy : E-Commerce",
+        image: "https://images.unsplash.com/photo-1586880244406-556ebe35f282?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
     },
     {
         id: 2,
-        title: "MusicSpot : Explore your favorite music"
+        title: "MusicSpot : Explore your favorite music",
+        image: "https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
     },
     {
         id: 3,
-        title: "Login Page"
+        title: "Login Page",
+        image: "https://images.unsplash.com/photo-1642480504730-3ba4bbfaa0ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
     },
     {
         id: 4,
-        title: "Markdown Previewer"
+        title: "Markdown Previewer",
+        image: "https://images.unsplash.com/photo-1632062549850-44a0a6eede16?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
     },
     {
         id: 5,
-        title: "Quote Generator"
+        title: "Quote Generator",
+        image: "https://images.unsplash.com/photo-1494178270175-e96de2971df9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=780&q=80"
     },
     {
         id: 6,
@@ -32,7 +37,8 @@ const FrontendProjects = [
     },
     {
         id: 7,
-        title: "Vegetable Box : Get Fresh Vegetable from local farmer"
+        title: "Vegetable Box : Get Fresh Vegetable from local farmer",
+        image: "https://images.unsplash.com/photo-1609842947419-ba4f04d5d60f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
     }, {
         id: 8,
         title: "Web Portofolio"
@@ -65,28 +71,43 @@ const Frontend = () => {
             <button onClick={handleClick} className="button rounded-full ml-28 lg:ml-80 w-56 h-12 border border-black p-2 text-black">See More</button>
             {comp && (
                 <Layout>
-                    <div className="flex justify-between">
-                        <div>
+                    <div className="">
+                        <ul className="font-[Poppins]">
+                            <li>
+                                <h2 className="ml-5 underline underline-offset-4">Supporting Course</h2>
+                                <ul className="list-disc pl-4">
+                                    <li className="ml-5 text-md font-thin">FreeCodeCamp. Frontend with React</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="">
+                        <div className="font-[Poppins] text-sm p-5 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 gap-5 place-items-center">
                             {FrontendProjects.map(project => (
-                                <ul key={project.id} className="flex gap-16">
+                                <ul key={project.id}>
                                     <li>
-                                        <h1 className="font-thin text-xl italic">{project.id}. </h1>
-                                    </li>
-                                    <li>
-                                        <h1 className="font-thin text-md lg:text-xl italic font-[Poppins]">{project.title}</h1>
+                                        <div className="h-96 w-60 rounded shadow-md">
+                                            <img loading="lazy" className="rounded h-72 object-cover w-full" src={project.image} alt={project.title} />
+                                            <div className="p-2 h-24 relative ">
+                                                <h1>{project.title}</h1>
+                                                <button className="absolute bottom-0 left-0 p-2 w-full ">
+                                                    <h2 className="p-1 bg-emerald-400 rounded text-white hover:text-black hover:opacity-75">visit</h2>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
+                                // <div className="grid grid-cols-4">
+                                //     <ul key={project.id} className="gap-16">
+                                //         <li>
+                                //             <h1 className="font-thin text-xl italic">{project.id}. </h1>
+                                //         </li>
+                                //         <li>
+                                //             <h1 className="font-thin text-md lg:text-xl italic font-[Poppins]">{project.title}</h1>
+                                //         </li>
+                                //     </ul>
+                                // </div>
                             ))}
-                        </div>
-                        <div className="border-l border-black w-2/6">
-                            <ul className="font-[Poppins]">
-                                <li>
-                                    <h2 className="ml-5 underline underline-offset-4">Supporting Course</h2>
-                                    <ul className="list-disc pl-4">
-                                        <li className="ml-5 text-md font-thin">FreeCodeCamp. Frontend with React</li>
-                                    </ul>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </Layout >

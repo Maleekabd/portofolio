@@ -6,7 +6,7 @@ const About = () => {
 
     return (
         <div className='relative'>
-            <div className={`${Styles.background} absolute left-12 lg:left-40 top-[35em] h-auto lg:h-[35em] w-4/5 lg:w-9/12 z-10`}>
+            <div className={`${Styles.background} h-auto w-4/5 lg:w-9/12 z-10`}>
                 <div className='flex w-full flex-col lg:flex-row items-center lg:h-full lg:justify-center'>
                     <div className='flex p-5 items-center justify-center lg:w-3/6'>
                         <img src={Malik} alt="malik" srcset="" className='w-3/6 rounded shadow-sm' />
