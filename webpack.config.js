@@ -1,19 +1,14 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const miniCssExtraPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: "production",
-    entry: [
-        './src/index.js'
-        // './src/pages/Footer.jsx',
-        // './src/pages/MyPorto.jsx',
-        // './src/components/Navbar.jsx',
-        // './src/components/landingPage.jsx',
-        // './src/App.js'
-    ],
+    entry: ['./src/index.js'],
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.[fullhash].js'
+        filename: 'bundle.[fullhash].js',
+        clean: true,
     },
     module: {
         rules: [
@@ -24,7 +19,7 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
+                use: [miniCssExtraPlugin.loader, 'css-loader', 'postcss-loader'],
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/i,
@@ -43,6 +38,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'public/index.html',
             favicon: 'public/favicon.ico'
-        })
+        }),
+        new miniCssExtraPlugin(),
     ],
 }

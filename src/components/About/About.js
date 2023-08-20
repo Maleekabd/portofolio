@@ -1,8 +1,6 @@
 import React from 'react'
 import Malik from "../../assets/malik.png"
-import Styles from "./About.module.css"
-import { useRef } from 'react'
-import { useState } from 'react'
+import Styles from "../About/About.module.css"
 
 const About = () => {
 

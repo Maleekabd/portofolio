@@ -45,10 +45,10 @@ const QuantumComputing = () => {
                                 {QuantumProjects.map(project => (
                                     <ul key={project.id} className="flex gap-16">
                                         <li>
-                                            <h1 className="font-thin text-md lg:text-2xl italic">{project.id}. </h1>
+                                            <h1 className="font-thin text-md lg:text-xl italic">{project.id}. </h1>
                                         </li>
                                         <li>
-                                            <h1 className="font-thin text-md lg:text-2xl italic font-[Poppins]">{project.title}</h1>
+                                            <h1 className="font-thin text-md lg:text-xl italic font-[Poppins]">{project.title}</h1>
                                         </li>
                                     </ul>
                                 ))}
