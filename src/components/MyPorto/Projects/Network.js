@@ -62,8 +62,8 @@ const Network = () => {
                                 <ul key={project.id}>
                                     <li>
                                         <div className="h-96 w-60 rounded shadow-md">
-                                            <img loading="lazy" className="rounded h-72 object-cover w-full" src={project.image} alt={project.title} />
-                                            <div className="p-2 h-24 relative ">
+                                            <img loading="lazy" className="rounded h-64 object-cover w-full" src={project.image} alt={project.title} />
+                                            <div className="p-2 h-32 relative ">
                                                 <h1>{project.title}</h1>
                                                 <button className="absolute bottom-0 left-0 p-2 w-full ">
                                                     <h2 className="p-1 bg-emerald-400 rounded text-white hover:text-black hover:opacity-75">visit</h2>

@@ -38,29 +38,34 @@ const Cryptography = () => {
             <button onClick={handleClick} className="button rounded-full ml-28 lg:ml-80 w-56 h-12 border border-black p-2 text-black">See More</button>
             {comp && (
                 <Layout>
-                    <div className="flex justify-between">
-                        <div>
+                    <div className="">
+                        <ul className="font-[Poppins]">
+                            <li>
+                                <h2 className="ml-5 underline underline-offset-4">Supporting Course</h2>
+                                <ul className="list-disc pl-4">
+                                    <li className="ml-5 text-md font-thin">Security and Cryptography</li>
+                                    <li className="ml-5 text-md font-thin">Bitcoin and Cryptocurrecies Technology</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="">
+                        <div className="font-[Poppins] text-sm p-5 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 gap-5 place-items-center">
                             {CryptographyProject.map(project => (
-                                <ul key={project.id} className="flex gap-16">
+                                <ul key={project.id}>
                                     <li>
-                                        <h1 className="font-thin text-xl italic">{project.id}. </h1>
-                                    </li>
-                                    <li>
-                                        <h1 className="font-thin text-md lg:text-xl italic font-[Poppins]">{project.title}</h1>
+                                        <div className="h-96 w-60 rounded shadow-md">
+                                            <img loading="lazy" className="rounded h-64 object-cover w-full" src={project.image} alt={project.title} />
+                                            <div className="p-2 h-32 relative ">
+                                                <h1>{project.title}</h1>
+                                                <button className="absolute bottom-0 left-0 p-2 w-full ">
+                                                    <h2 className="p-1 bg-emerald-400 rounded text-white hover:text-black hover:opacity-75">visit</h2>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </li>
                                 </ul>
                             ))}
-                        </div>
-                        <div className="border-l border-black w-2/6">
-                            <ul className="font-[Poppins]">
-                                <li>
-                                    <h2 className="ml-5 underline underline-offset-4">Supporting Course</h2>
-                                    <ul className="list-disc pl-4">
-                                        <li className="ml-5 text-md font-thin">Security and Cryptography</li>
-                                        <li className="ml-5 text-md font-thin">Bitcoin and Cryptocurrecies Technology</li>
-                                    </ul>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </Layout>

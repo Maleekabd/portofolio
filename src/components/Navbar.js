@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineInstagram } from "react-icons/ai"
 import { BsLinkedin } from "react-icons/bs"
 import Styles from "../../src/styles/navbar.module.css"
+import Scytale from "../assets/logo-no-background.png"
 
 class Navbar extends React.Component {
     render() {
@@ -15,7 +16,7 @@ class Navbar extends React.Component {
                         <div>
                             <li>
                                 <button type="button">
-                                    Logo
+                                    <img src={Scytale} alt="logo" className="w-1/12" />
                                 </button>
                             </li>
                         </div>

@@ -87,8 +87,8 @@ const Frontend = () => {
                                 <ul key={project.id}>
                                     <li>
                                         <div className="h-96 w-60 rounded shadow-md">
-                                            <img loading="lazy" className="rounded h-72 object-cover w-full" src={project.image} alt={project.title} />
-                                            <div className="p-2 h-24 relative ">
+                                            <img loading="lazy" className="rounded h-64 object-cover w-full" src={project.image} alt={project.title} />
+                                            <div className="p-2 h-32 relative ">
                                                 <h1>{project.title}</h1>
                                                 <button className="absolute bottom-0 left-0 p-2 w-full ">
                                                     <h2 className="p-1 bg-emerald-400 rounded text-white hover:text-black hover:opacity-75">visit</h2>
@@ -97,16 +97,6 @@ const Frontend = () => {
                                         </div>
                                     </li>
                                 </ul>
-                                // <div className="grid grid-cols-4">
-                                //     <ul key={project.id} className="gap-16">
-                                //         <li>
-                                //             <h1 className="font-thin text-xl italic">{project.id}. </h1>
-                                //         </li>
-                                //         <li>
-                                //             <h1 className="font-thin text-md lg:text-xl italic font-[Poppins]">{project.title}</h1>
-                                //         </li>
-                                //     </ul>
-                                // </div>
                             ))}
                         </div>
                     </div>
