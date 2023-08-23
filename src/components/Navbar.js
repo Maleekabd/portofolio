@@ -9,7 +9,7 @@ class Navbar extends React.Component {
         return (
             <>
                 <header>
-                    <marquee className="p-3 text-rose-400 font-bold text-md" behavior="" direction="left">Mohon Maaf atas ketidaknyamanannya, untuk sementara versi mobile sedang tahap pengembangan. terimakasih</marquee>
+                    <h1 className="p-3 text-rose-400 font-bold text-md" behavior="" direction="left">Mohon Maaf atas ketidaknyamanannya, untuk sementara versi mobile sedang tahap pengembangan. terimakasih</h1>
                 </header>
                 <nav className={`${Styles.Navbar}`}>
                     <ul className="flex justify-between items-center p-5 text-white">
