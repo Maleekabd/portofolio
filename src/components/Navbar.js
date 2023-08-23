@@ -22,7 +22,7 @@ class Navbar extends React.Component {
 
                         <div className="flex gap-5">
                             <li className="p-1 hidden lg:block">
-                                <a className="lg:tracking-wide text-black">malikabdurrasyid86@gmail.com</a>
+                                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" className="lg:tracking-wide text-black">malikabdurrasyid86@gmail.com</a>
                             </li>
                             <li className="p-1 flex items-center justify-between">
                                 <a target="_blank" rel="noreferrer" href="https://www.instagram.com/__malikabd/">

@@ -1,6 +1,5 @@
 import React from "react"
 import Styles from "../styles/landingPage.module.css"
-import Surveillance from "../assets/surveillance.jpg"
 import About from "./About/About";
 
 class LandingPage extends React.Component {
