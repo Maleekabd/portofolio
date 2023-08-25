@@ -1,0 +1,11 @@
+Model Information:
+* title:	LOW POLY STUDIO
+* source:	https://sketchfab.com/3d-models/low-poly-studio-982747d4d759457c87a2e7a48c9dae91
+* author:	tobys3d (https://sketchfab.com/tobys3d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "LOW POLY STUDIO" (https://sketchfab.com/3d-models/low-poly-studio-982747d4d759457c87a2e7a48c9dae91) by tobys3d (https://sketchfab.com/tobys3d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

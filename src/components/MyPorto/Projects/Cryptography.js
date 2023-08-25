@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReusableComponents from "../UI/ReusableComponents";
 import CRYPTOGRAPHY from "../../../assets/Cryptography.jpg"
 import Layout from "../../../layout/layout";
+import Styles from "../styles/trapezoid.module.css"
 
 const CryptographyProject = [
     {
@@ -48,11 +49,11 @@ const Cryptography = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="">
+                    <div>
                         <div className="font-[Poppins] text-sm p-5 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 gap-5 place-items-center">
                             {CryptographyProject.map(project => (
                                 <ul key={project.id}>
-                                    <li>
+                                    <li className={`${Styles.card} rounded`}>
                                         <div className="h-96 w-60 rounded shadow-md">
                                             <img loading="lazy" className="rounded h-64 object-cover w-full" src={project.image} alt={project.title} />
                                             <div className="p-2 h-32 relative ">

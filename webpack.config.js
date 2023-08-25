@@ -31,7 +31,11 @@ module.exports = {
                         }
                     }
                 ]
-            }
+            },
+            {
+                test: /\.bin$/,
+                use: 'raw-loader',
+            },
         ]
     },
     plugins: [

@@ -3,6 +3,7 @@ import ReusableComponents from "../UI/ReusableComponents";
 import FRONTEND from "../../../assets/react.png"
 import Layout from "../../../layout/layout";
 import { useState } from "react";
+import Styles from "../styles/trapezoid.module.css"
 
 
 const FrontendProjects = [
@@ -85,7 +86,7 @@ const Frontend = () => {
                         <div className="font-[Poppins] text-sm p-5 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 gap-5 place-items-center">
                             {FrontendProjects.map(project => (
                                 <ul key={project.id}>
-                                    <li>
+                                    <li className={`${Styles.card} rounded`}>
                                         <div className="h-96 w-60 rounded shadow-md">
                                             <img loading="lazy" className="rounded h-64 object-cover w-full" src={project.image} alt={project.title} />
                                             <div className="p-2 h-32 relative ">
