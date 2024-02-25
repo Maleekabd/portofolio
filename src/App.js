@@ -3,21 +3,48 @@ import Navbar from "./components/Navbar"
 import LandingPage from "./components/landingPage";
 import MyPortofolio from "./pages/MyPorto";
 import Footer from "./pages/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { AboutMeSpesific } from "./components/About/About";
+import MySkills from "./components/MySkills/MySkills";
+import Frontend from "./components/MyPorto/Projects/Frontend";
+
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <header>
-                    <Navbar />
-                </header>
-                <main>
-                    <LandingPage />
-                    <MyPortofolio />
-                </main>
-                <footer>
-                    <Footer />
-                </footer>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={
+                            <>
+                                <header><Navbar /></header>
+                                <main>
+                                    <LandingPage />
+                                    <MySkills />
+                                </main>
+                                <footer><Footer /></footer>
+                            </>
+                        } />
+                        <Route path="/aboutme" element={
+                            <>
+                                <header><Navbar /></header>
+                                <main>
+                                    <AboutMeSpesific />
+                                </main>
+                                <footer><Footer /></footer>
+                            </>
+                        } />
+                        <Route path="/software-engineer-react-projects" element={
+                            <>
+                                <header><Navbar /></header>
+                                <main>
+                                    <Frontend />
+                                </main>
+                                <footer><Footer /></footer>
+                            </>
+                        } />
+                    </Routes>
+                </BrowserRouter>
             </div>
         )
     }
