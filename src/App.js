@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AboutMeSpesific } from "./components/About/About";
 import MySkills from "./components/MySkills/MySkills";
 import Frontend from "./components/MyPorto/Projects/Frontend";
+import About from "./components/About/About";
 
 
 class App extends React.Component {
@@ -20,6 +21,7 @@ class App extends React.Component {
                                 <header><Navbar /></header>
                                 <main>
                                     <LandingPage />
+                                    <About />
                                     <MySkills />
                                 </main>
                                 <footer><Footer /></footer>

@@ -8,7 +8,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const About = () => {
 
     return (
-        <div className='relative'>
+        <div className='h-screen relative'>
             <div className={`h-screen w-full z-10`}>
                 <div className='flex w-full flex-col lg:flex-row items-center lg:h-full lg:justify-center'>
                     <section className='flex p-5 items-center justify-end lg:w-2/6'>
