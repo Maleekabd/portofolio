@@ -66,12 +66,12 @@ const Frontend = () => {
                     </ul>
                 </div>
                 <div className="">
-                    <div className="font-[Poppins] sm:text-xs text-sm sm:p-1 sm:gap-2 p-5 grid sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 gap-5 place-items-center">
+                    <div className="font-[Poppins] min-[320px]:text-[12px] text-sm min-[320px]:p-1 min-[320px]:gap-2 p-5 grid min-[320px]:grid-cols-3 md:grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 gap-5 place-items-center">
                         {FrontendProjects.map(project => (
                             <ul key={project.id}>
                                 <li className={`${Styles.card} rounded`}>
-                                    <div className="sm:h-auto h-96 sm:w-auto w-60 rounded shadow-md">
-                                        <img loading="lazy" className="rounded sm:h-80 h-64 object-cover w-full" src={project.image} alt={project.title} />
+                                    <div className="min-[320px]:h-auto h-96 min-[320px]:w-auto w-60 rounded shadow-md">
+                                        <img loading="lazy" className="rounded min-[320px]:h-40 h-64 object-cover w-full" src={project.image} alt={project.title} />
                                         <div className="p-2 h-32 relative ">
                                             <h1>{project.title}</h1>
                                             <button className="absolute bottom-0 left-0 p-2 w-full ">

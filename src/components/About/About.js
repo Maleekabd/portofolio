@@ -1,6 +1,5 @@
 import React from 'react'
 import Malik from "../../assets/malik.png"
-import Styles from "../About/About.module.css"
 import { Link } from 'react-router-dom'
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -8,28 +7,28 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const About = () => {
 
     return (
-        <div className='sm:h-auto h-screen relative'>
-            <div className={`sm:h-auto h-screen w-full z-10`}>
+        <div className='min-[320px]:h-auto h-screen relative'>
+            <div className={`min-[320px]:h-auto h-screen w-full z-10`}>
                 <div className='flex w-full flex-col  lg:flex-row items-center lg:h-full lg:justify-center'>
-                    <section className='flex p-5 items-center justify-end sm:justify-center lg:w-2/6'>
-                        <img src={Malik} alt="malik" srcset="" className='w-4/6 rounded shadow-sm sm:w-2/6' />
+                    <section className='flex p-5 items-center justify-end min-[320px]:justify-center lg:w-2/6'>
+                        <img src={Malik} alt="malik" srcset="" className='w-4/6 rounded shadow-sm min-[320px]:w-2/6' />
                     </section>
                     <section className='lg:w-4/6 lg:h-full flex items-center justify-start'>
-                        <div className='flex flex-col h-auto m-5 p-3'>
-                            <h1 className='text-7xl font-semibold font-[Poppins] border-b border-black leading-[60px]'>WHO AM I ?</h1>
-                            <h1 className='text-7xl font-extrabold text-indigo-400 leading-[60px]'>MALIK ABDURRASYID</h1>
-                            <p className='text-7xl font-extrabold  text-white leading-[60px]'>JUST A SIMPLE PROGRAMMER BUT {` `}
+                        <div className='flex flex-col h-auto min-[320px]:m-2 m-5 p-3'>
+                            <h1 className='text-7xl min-[320px]:text-[44px] font-semibold font-[Poppins] border-b border-black leading-[35px] tracking-tighter'>WHO AM I ?</h1>
+                            <h1 className='text-7xl font-extrabold min-[320px]:text-[44px] text-indigo-400 leading-[35px]'>MALIK ABDURRASYID</h1>
+                            <p className='text-7xl font-extrabold  text-white leading-[35px] min-[320px]:text-[44px]'>JUST A SIMPLE PROGRAMMER BUT {` `}
                                 <span className='text-rose-400 italic'>AMBITIOUS.</span></p>
 
                             <svg className='absolute bottom-6 z-0' width="400" height="200">
                                 <path
-                                    d="M10 110 Q 95 90 250 85 350 85 400 90"
+                                    d="M10 110 Q 95 90 250 105 350 105"
                                     fill="none"
                                     stroke="white"
                                     strokeWidth="2"
                                 />
                                 <path
-                                    d="M10 120 Q 95 95 250 85 350 75 350 70"
+                                    d="M10 120 Q 95 95 250 105 350 100"
                                     fill="none"
                                     stroke="white"
                                     strokeWidth="2"
@@ -37,7 +36,7 @@ const About = () => {
                        
                             </svg>
 
-                            <button className='z-10 border  mt-16 font-[Poppins] text-start rounded-full shadow w-1/5 sm:w-2/5 h-10'><Link to={'/aboutme'} className='flex items-center gap-5 justify-center hover:bg-emerald-400 hover:rounded-full hover:h-10'>
+                            <button className='z-10 border  mt-16 font-[Poppins] text-start rounded-full shadow w-1/5 min-[320px]:w-2/5 h-10'><Link to={'/aboutme'} className='flex items-center gap-5 justify-center hover:bg-emerald-400 hover:rounded-full hover:h-10'>
                                 See More <FaArrowRightLong />
                             </Link></button>
                         </div>

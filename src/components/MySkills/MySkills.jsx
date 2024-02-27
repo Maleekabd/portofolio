@@ -21,15 +21,15 @@ const skills = [
 
 const MySkills = () => {
     return (
-        <section className='sm:h-auto h-screen p-3'>
+        <section className='min-[320px]:h-auto h-screen p-3'>
             <div className='m-3'>
-                <h1 className='text-4xl font-bold italic'>My Skill(s)</h1>
+                <h1 className='min-[320px]:text-[30px] text-4xl font-bold italic'>My Skill(s)</h1>
                 <div className='grid grid-cols-2 gap-5 m-3'>
                     {skills.map(skill => (
                         <>
-                            <div className='relative sm:h-[25em] h-56 border rounded-xl p-3 font-[Poppins] font-extrabold'>
-                                <h1 className='text-2xl'>{skill.title}</h1>
-                                <p className='text-md font-thin text-justify'>{skill.description}</p>
+                            <div className='relative min-[320px]:h-[25em] h-56 border rounded-xl p-3 font-[Poppins] font-extrabold'>
+                                <h1 className='min-[320px]:text-[15px] text-2xl min-[320px]:leading-[17px] min-[320px]:mb-3'>{skill.title}</h1>
+                                <p className='min-[320px]:text-[13px] text-md font-thin text-justify'>{skill.description}</p>
                                 <Link to={`/${skill.path}`}>
                                     <button className='hover:bg-emerald-400 font-thin absolute bottom-0 border rounded-full p-2 px-5 my-3'>
                                         See Projects

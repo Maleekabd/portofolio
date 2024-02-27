@@ -10,7 +10,7 @@ class Footer extends React.Component {
             <header className="border-t font-[Poppins] text-gray-400">
                 <nav>
                     <div className="flex flex-row flex-wrap justify-between p-5">
-                        <h2 className="sm:text-xs">&copy;All right reserved. Malik Abdurrasyid 2024</h2>
+                        <h2 className="min-[320px]:text-xs">&copy;All right reserved. Malik Abdurrasyid 2024</h2>
                         <div>
                             <ul className="flex flex-wrap justify-evenly gap-5 sm:text-xs">
                                 <li>
