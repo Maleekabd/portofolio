@@ -8,11 +8,11 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const About = () => {
 
     return (
-        <div className='h-screen relative'>
-            <div className={`h-screen w-full z-10`}>
-                <div className='flex w-full flex-col lg:flex-row items-center lg:h-full lg:justify-center'>
-                    <section className='flex p-5 items-center justify-end lg:w-2/6'>
-                        <img src={Malik} alt="malik" srcset="" className='w-4/6 rounded shadow-sm' />
+        <div className='sm:h-auto h-screen relative'>
+            <div className={`sm:h-auto h-screen w-full z-10`}>
+                <div className='flex w-full flex-col  lg:flex-row items-center lg:h-full lg:justify-center'>
+                    <section className='flex p-5 items-center justify-end sm:justify-center lg:w-2/6'>
+                        <img src={Malik} alt="malik" srcset="" className='w-4/6 rounded shadow-sm sm:w-2/6' />
                     </section>
                     <section className='lg:w-4/6 lg:h-full flex items-center justify-start'>
                         <div className='flex flex-col h-auto m-5 p-3'>
@@ -23,20 +23,21 @@ const About = () => {
 
                             <svg className='absolute bottom-6 z-0' width="400" height="200">
                                 <path
-                                    d="M10 50 Q 95 30 250 25 350 25 400 30"
+                                    d="M10 110 Q 95 90 250 85 350 85 400 90"
                                     fill="none"
                                     stroke="white"
                                     strokeWidth="2"
                                 />
                                 <path
-                                    d="M0 60 Q 95 30 250 20 350 20 390 40"
+                                    d="M10 120 Q 95 95 250 85 350 75 350 70"
                                     fill="none"
                                     stroke="white"
                                     strokeWidth="2"
                                 />
+                       
                             </svg>
 
-                            <button className='z-10 border  mt-16 font-[Poppins] text-start rounded-full shadow w-1/5 h-10'><Link to={'/aboutme'} className='flex items-center gap-5 justify-center hover:bg-emerald-400 hover:rounded-full hover:h-10'>
+                            <button className='z-10 border  mt-16 font-[Poppins] text-start rounded-full shadow w-1/5 sm:w-2/5 h-10'><Link to={'/aboutme'} className='flex items-center gap-5 justify-center hover:bg-emerald-400 hover:rounded-full hover:h-10'>
                                 See More <FaArrowRightLong />
                             </Link></button>
                         </div>

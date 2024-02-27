@@ -66,16 +66,16 @@ const Frontend = () => {
                     </ul>
                 </div>
                 <div className="">
-                    <div className="font-[Poppins] text-sm p-5 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 gap-5 place-items-center">
+                    <div className="font-[Poppins] sm:text-xs text-sm sm:p-1 sm:gap-2 p-5 grid sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-5 lg:grid-cols-4 gap-5 place-items-center">
                         {FrontendProjects.map(project => (
                             <ul key={project.id}>
                                 <li className={`${Styles.card} rounded`}>
-                                    <div className="h-96 w-60 rounded shadow-md">
-                                        <img loading="lazy" className="rounded h-64 object-cover w-full" src={project.image} alt={project.title} />
+                                    <div className="sm:h-auto h-96 sm:w-auto w-60 rounded shadow-md">
+                                        <img loading="lazy" className="rounded sm:h-80 h-64 object-cover w-full" src={project.image} alt={project.title} />
                                         <div className="p-2 h-32 relative ">
                                             <h1>{project.title}</h1>
                                             <button className="absolute bottom-0 left-0 p-2 w-full ">
-                                                <h2 className="p-1 bg-emerald-400 rounded text-white hover:text-black hover:opacity-75">visit</h2>
+                                                <h2 className="p-1 bg-emerald-400 rounded text-white hover:text-black hover:opacity-75">Visit</h2>
                                             </button>
                                         </div>
                                     </div>
